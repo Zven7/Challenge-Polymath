@@ -103,13 +103,13 @@ router.use('/', async (req, res, next) => {
         if (req.query.name) {
             console.log('QUERY')
             const { name, order } = req.query;
+            let word = name.toLowerCase();
 
 
             const queryResult = await Restaurant.findAll({
                 where: {
-                    name: {
-                        [Sequelize.Op.iLike]: `%${name}%`
-                    }
+                    [Sequelize.Op.or]: [ {name: { [Sequelize.Op.iLike]: `%${word}%` }}, {city: { [Sequelize.Op.iLike]: `%${word}%` }}
+                    ]
                 }
             });
 
