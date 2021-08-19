@@ -41,6 +41,7 @@ export const addRestaurant = (payload) => {
 
 export const editRestaurant = (payload) => {
     return (dispatch) => {
+        console.log(payload, 'This is the edited Res');
         axios.put(`/restaurants/${payload.resId}`, payload)
     };
 }
