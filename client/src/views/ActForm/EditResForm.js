@@ -60,7 +60,6 @@ const EditResForm = (props) => {
         }
         dispatch(editRestaurant(input));
         alert('Restaurant Edited');
-        window.location.reload(false);
     }
 
 
