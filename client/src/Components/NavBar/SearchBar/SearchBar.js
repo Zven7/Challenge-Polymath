@@ -3,11 +3,13 @@ import { getRestaurantQuery } from '../../../Redux/actions'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { FaSearch } from "react-icons/fa";
+import { useHistory } from 'react-router';
 import './SearchBar.css'
 
 
 export default function SearchBar() {
     const dispatch = useDispatch();
+    const { push } = useHistory();
 
 
     const [input, setInput] = useState({
@@ -26,6 +28,7 @@ export default function SearchBar() {
         setInput({
             word: ''
         })
+        push(`/search/${queryParam}`)
     }
 
 
@@ -39,8 +42,8 @@ export default function SearchBar() {
                 onChange={handleChange}
                 id='searchBarFF'
             />
-            <button id='sendButton' type='submit' ><Link to={queryParam.length > 0? `/search/${queryParam}`: '/home'}>
-                <FaSearch id='searchIcon' /></Link></button>
+            <button id='sendButton' type='submit' >
+                <FaSearch id='searchIcon' /></button>
         </form>
     )
 }
