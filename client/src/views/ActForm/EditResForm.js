@@ -8,15 +8,15 @@ const EditResForm = (props) => {
     const dispatch = useDispatch();
     const { id } = useParams();
     //const actList = useSelector(state => state.activitiesList);
-    const restaurant = useSelector(state => state.singleRestaurant);
-    const { name, city, address, description, restaurantPhoto } = restaurant;
+    /* const restaurant = useSelector(state => state.singleRestaurant);
+    const { name, city, address, description, restaurantPhoto } = restaurant; */
 
     const [input, setInput] = useState({
-        name: name,
-        city: city,
-        address: address,
-        description: description,
-        restaurantPhoto: restaurantPhoto,
+        name: '',
+        city: '',
+        address: '',
+        description: '',
+        restaurantPhoto: '',
         resId: id
     });
 
