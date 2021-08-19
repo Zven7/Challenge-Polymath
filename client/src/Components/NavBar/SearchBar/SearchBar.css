@@ -1,0 +1,39 @@
+#searchBarFF {
+  margin: 10px;
+  margin-top: 0px;
+  margin-right: 0px;
+  padding: 15px;
+  width: 30em;
+  text-align: left;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+}
+
+#sendButton {
+  background-color: transparent;
+  border: 0px;
+  position: relative;
+  top: -45px;
+  right: -120px;
+}
+
+#searchIcon:hover {
+  color: black;
+}
+
+#searchForm {
+  width: 30em;
+  height: 50px;
+  margin-right: 0px !important;
+}
+
+@media (max-width: 1538px) {
+  #searchForm #searchBarFF {
+    margin-left: 40px;
+  }
+}

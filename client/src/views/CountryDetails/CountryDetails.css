@@ -1,0 +1,124 @@
+#imgContainer {
+  width: 500px;
+  height: 100%;
+  padding: 30px;
+}
+#imgContainer img {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#detailedCountry {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  border-radius: 8px;
+  color: black;
+  padding: 20px 0px 20px 0px;
+  /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+  margin: 20px 0px 20px 0px;
+}
+
+#goBackButton {
+  border: 0px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+#goBackButton:hover {
+  padding: 30px 45px 30px 45px;
+}
+
+#countryDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.activityCardWrapper {
+  border-radius: 5px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 1px 15px 5px rgb(0 0 0 / 12%);
+  text-align: left;
+  transition: 200ms;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.activityCardWrapper:hover {
+  transform: scale(1.1);
+  margin: 30px;
+}
+#activitiesList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#actHeader {
+  display: flex;
+  align-self: center;
+  align-items: baseline;
+}
+hr {
+  width: 100vh;
+  height: 2px;
+  margin-bottom: 30px;
+}
+
+#actHeader h2 {
+  margin: 0px 5px 0px 5px;
+}
+
+#activitiesLinkFFFFF {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin: 20px;
+}
+
+.h4Create {
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background-color: rgb(255, 196, 0);
+  color: black;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 923px) {
+  #detailedCountry {
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,17 @@
+#errorMsgQuery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#goBackButton a {
+  color: white;
+}
+
+#queryContainer {
+  margin-bottom: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

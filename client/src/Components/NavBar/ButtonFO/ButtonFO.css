@@ -1,0 +1,20 @@
+select {
+  margin: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(189, 189, 189);
+  border: 0.01px black thin;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+}
+
+select:hover {
+  background-color: azure;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}

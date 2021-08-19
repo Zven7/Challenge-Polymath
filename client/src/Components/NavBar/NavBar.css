@@ -1,0 +1,20 @@
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 140px 0px 140px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+#filterWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1538px) {
+  #wrapper {
+    flex-direction: column;
+  }
+}
