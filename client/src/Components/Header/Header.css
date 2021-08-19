@@ -3,7 +3,9 @@
 #headerContainer {
   display: flex;
   justify-content: left;
-  background-color: black;
+  background-color: #ffc400;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 97%, 86% 68%, 64% 77%, 38% 81%);
+  border-bottom-radius: 50% 20%;
 }
 
 #headerText a {
