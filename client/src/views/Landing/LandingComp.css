@@ -1,0 +1,43 @@
+.landingComp {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImg {
+  width: 200px;
+  height: 200px;
+}
+
+.aLaCarte {
+  font-family: "B612", sans-serif;
+}
+
+.landingText {
+  filter: drop-shadow(0 0 0.3rem rgb(224, 224, 224));
+  max-width: 80vw;
+  font-size: 50px;
+}
+
+.reserveBtn {
+  padding: 20px;
+  margin: 25px;
+  position: relative;
+  top: 20px;
+  background-color: #ffc400;
+}
+
+.landingH3 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "B612", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .landingComp {
+    flex-direction: column;
+  }
+}

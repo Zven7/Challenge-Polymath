@@ -6,6 +6,7 @@ import CountryDetails from './views/CountryDetails/CountryDetails';
 import ActForm from './views/ActForm/ActForm';
 import Footer from './Components/Footer';
 import IncorrectPage from './views/IncorrectPage/IncorrectPage';
+import LandingPage from './views/Landing/LandingPage';
 import { Route, Switch } from 'react-router-dom';
 //import { useDispatch } from 'react-redux';
 import './App.css';
@@ -38,6 +39,7 @@ function App() {
           <Home />
           <Footer />
         </Route>
+        <Route exact path='/' component={LandingPage}></Route>
         <Route path='*' component={IncorrectPage}></Route>
       </Switch>
         
