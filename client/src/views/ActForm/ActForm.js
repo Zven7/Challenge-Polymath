@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { getAllRestaurants, addRestaurant } from "../../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from 'react-router-dom';
 import './ActForm.css';
 
 const ActForm = (props) => {
     const dispatch = useDispatch();
     //const actList = useSelector(state => state.activitiesList);
     const countryList = useSelector(state => state.restaurantsList);
+    const { push } = useHistory();
 
     const [input, setInput] = useState({
         name: '',
@@ -56,6 +58,7 @@ const ActForm = (props) => {
         }
         dispatch(addRestaurant(input));
         alert('Restaurant Created');
+        push('/home');
     }
 
 

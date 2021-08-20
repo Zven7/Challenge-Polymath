@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { getAllRestaurants, editRestaurant } from "../../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import './ActForm.css';
 
 const EditResForm = (props) => {
     const dispatch = useDispatch();
     const { id } = useParams();
+    const { push } = useHistory();
     //const actList = useSelector(state => state.activitiesList);
     /* const restaurant = useSelector(state => state.singleRestaurant);
     const { name, city, address, description, restaurantPhoto } = restaurant; */
@@ -60,6 +61,7 @@ const EditResForm = (props) => {
         }
         dispatch(editRestaurant(input));
         alert('Restaurant Edited');
+        push('/home');
     }
 
 

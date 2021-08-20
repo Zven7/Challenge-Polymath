@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getAllRestaurants, addReservation } from "../../Redux/actions";
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import './ActForm.css';
 
@@ -9,6 +9,7 @@ const ReservationForm = (props) => {
     //const actList = useSelector(state => state.activitiesList);
     const countryList = useSelector(state => state.restaurantsList);
     const { id } = useParams();
+    const { push } = useHistory();
 
     const [input, setInput] = useState({
         customerName: '',
@@ -53,6 +54,7 @@ const ReservationForm = (props) => {
         }
         dispatch(addReservation(input));
         alert('Reservation Created');
+        push('/home');
     }
 
 
